@@ -53,6 +53,7 @@ group :development, :test do
   gem 'selenium-webdriver', '~> 3.11.0'
   gem 'pry-rails', '~> 0.3.6'
   gem 'pry-byebug', '~> 3.6.0'
+  gem 'pry-nav', '~> 0.2.4'
   gem 'factory_bot_rails', '~> 4.8.2'
   gem 'bullet', '~> 5.7.5'
   gem 'shoulda-matchers', '~> 3.1'
