@@ -15,6 +15,10 @@ class User < ApplicationRecord
   scope :candidates, -> { where(role: :candidate) }
   scope :admins_and_reviewers, -> { where(role: [:admin, :reviewer]) }
 
+  def to_s
+    "#{first_name} #{last_name}"
+  end
+
   private
 
   def password_required?

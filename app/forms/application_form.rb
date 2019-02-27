@@ -58,6 +58,7 @@ class ApplicationForm
     @_user ||= User.find_or_create_by(email: email) do |u|
       u.first_name = first_name
       u.last_name = last_name
+      u.password = Devise.friendly_token[0, 20]
     end
   end
 

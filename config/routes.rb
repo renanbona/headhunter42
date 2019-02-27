@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :dashboards, only: [:index]
     resources :companies, only: [:edit, :update]
     resources :users, except: [:show, :edit]
+    resources :applications
   end
 
   namespace :reviewer do
